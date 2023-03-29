@@ -28,6 +28,9 @@ jobs:
     - name: Execute Gradle Build 
       run: ./gradlew build
       
+    - name: List the files in current directory
+      run: ls -la
+      
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
